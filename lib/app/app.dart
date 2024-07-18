@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fullstack_challenge/app_navigation.dart';
+import 'package:fullstack_challenge/app/ui/splash/splash_page.dart';
 import 'package:get/get.dart';
 
 class App extends StatelessWidget {
@@ -9,9 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       navigatorKey: Get.key,
-      navigatorObservers: [GetObserver()],
-      routes: appRoutes,
-      initialRoute: Routes.SPLASH,
+      home: const SplashPage(),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.indigo,

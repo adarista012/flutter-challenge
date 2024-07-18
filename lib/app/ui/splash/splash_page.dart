@@ -8,16 +8,17 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder(
-        init: SplashController(),
-        builder: (controller) {
-          return Scaffold(
-            body: Center(
-              child: Text(
-                'FullStack Challenge',
-                style: Theme.of(context).textTheme.headlineLarge,
-              ),
+      init: SplashController(),
+      builder: (controller) {
+        return Scaffold(
+          body: Center(
+            child: Text(
+              'FullStack Challenge',
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
-          );
-        });
+          ),
+        );
+      },
+    );
   }
 }
